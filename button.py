@@ -46,3 +46,7 @@ class PushButton:
                 time.sleep_ms(self.debounce_time)
                 if self.pin.value() == 1:
                     return "RISING"
+        elif current_state == 0:
+            return "LOW"
+        else:
+            return "HIGH"
