@@ -16,9 +16,7 @@ on it to read the button state.
 You can also change the pin_number and debounce_time passed to the
 constructor and edge_type passed to the method to suit your requirements.
 
-if the state is machine.Pin.IRQ_FALLING, it will print "Button pressed"
-if the state is machine.Pin.IRQ_RISING, it will print "Button released"
-otherwise it will print "Invalid button state"
+if the state is "FALLING", it will print "Button pressed"
 
 Note: The code uses the time.sleep_ms() function which is only available
 on MicroPython. If you are using Python, you should use time.sleep()
